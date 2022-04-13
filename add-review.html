@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recenzie</title>
+
+    <style>
+        body   {margin-top: 20px;
+                margin-bottom: 0px;
+                margin-left: 100px;
+                margin-right: 0px;
+                width: 1000px;
+
+                background-color: rgb(202, 194, 183);
+                font-family: 'Times New Roman', Times, serif;
+                }
+
+       h1       {font-family: Helvetica, Arial, sans-serif; 
+                font-size: 200px; 
+                font-weight: bold;}
+
+        h2     {font-family: Helvetica, Arial, sans-serif; 
+                font-size: 60px;}
+
+        ul     {font-family: Helvetica, Arial, sans-serif; 
+                font-size: 30px; 
+                font-weight: bold;
+                
+                display: table; 
+                list-style-type: none; 
+                text-align: center;
+
+
+                margin-top: 0px;
+                margin-bottom: 0px;
+                margin-left: 0px;
+                margin-right: 0px;
+                padding: 0px;
+                height: 40px;
+                width: 100%;}
+
+        li     {display: table-cell;
+                margin-left: 0px;}
+
+        li.rebricek     {text-align: left;}
+        li.recenzie    {text-align: left;}
+        
+        a      {text-decoration: none; 
+                color: black;}   
+
+        li.ikonka       {text-align: right;}  
+        
+        form    {padding: 10%;
+                margin: 5%;
+                width: 50%;
+                background-color: rgba(0, 0, 0, 0.178);
+                border-radius: 100px;
+                font-family: Helvetica, Arial,sans-serif;
+                font-size: 17px;}
+
+        input   {width: 200px;
+                margin: 5%;
+                padding: 1%;
+                border: none;
+                border-radius: 5px;}
+
+        textarea        {margin: 5%;
+                        border: none;
+                        border-radius: 5px;}        
+        #zaner          {width: 20px;}
+        #submit         {width: 50px;
+                        background-color: #495463;
+                        color: #ffffff;
+                        font-weight: bold;}
+                        
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="rebricek"><a href="rebricek.html">Rebríček</a></li>
+            <li class="recenzie"><a href="add-review.html">Recenzie</a></li>
+            <li>
+                <a class="ikonka" href="index.html"><img src="home_icon.svg" alt="Domov" width="30px"></a>
+            </li>
+            
+        </ul>
+    </nav>
+    <h1>filmy</h1>
+    <h2>Pridajte recenziu</h2>
+
+    <form action="">
+        <label for="film">Názov filmu: </label><br>
+            <input id="film" type="text" name="film" required><br>
+
+        <label for="meno">Meno: </label><br>
+            <input id="meno" type="text"><br>
+
+        <label for="email">Email: </label><br>        
+            <input id="email" type="email" name="email" required><br>
+
+        <label for="recenzia">Recenzia: </label><br>
+            <textarea name="recenzia" id="recenzia" cols="50" rows="10"></textarea><br>
+
+        <label for="film">Názov filmu: </label><br>    
+            <input type="date"><br>
+
+        <label for="hodnotenie">Vaše hodnotenie:</label><br>
+            <input type="range" list="tickmarks">
+                <datalist id="tickmarks">
+                    <option value="0" label="0%"></option>
+                    <option value="10"></option>
+                    <option value="20"></option>
+                    <option value="30"></option>
+                    <option value="40"></option>
+                    <option value="50"></option>
+                    <option value="60"></option>
+                    <option value="70"></option>
+                    <option value="80"></option>
+                    <option value="90"></option>
+                    <option value="100" label="100%"></option>
+                </datalist><br>
+
+        <label for="zaner">Vyberte žáner filmu: </label><br>
+            <input id="zaner" type="checkbox" >
+                <label for="zaner">Dráma</label><br>
+            <input id="zaner" type="checkbox">
+                <label for="zaner">Komedia</label><br>
+            <input id="zaner" type="checkbox">
+                <label for="akcny">Akčný</label><br>
+            <input id="zaner" type="checkbox">
+                <label for="zaner">Horor</label><br>
+            <input id="submit" type="submit">
+    </form>
+</body>
+</html>
